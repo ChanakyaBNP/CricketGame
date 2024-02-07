@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 500px;
+  width: 400px;
+  background-color: aquamarine;
+  text-align: center;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 10px;
+  padding-bottom: 20px;
+  color: blue;
+}
+h2 {
+  margin: 15px;
+}
+
+button {
+  height: 55px;
+  width: 55px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 9px;
+  font-size: 15px;
+}
+
+.items:hover {
+  background-color: green;
+}
+
+.btn:hover {
+  background-color: red;
+}

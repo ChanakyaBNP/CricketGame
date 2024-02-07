@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Cricket Game</title>
+  </head>
+  <body>
+    <main class="box">
+      <div class="container">
+        <h1>Cricket Game</h1>
+        <h2>Pls Click the any option from the following:</h2>
+
+        <!-----------------------Bat--------------------------->
+        <button
+          class="items"
+          onclick="
+            let computerChoice = getComputerChoice();
+            let resultMsg = getResult('Bat', computerChoice);
+            showResult('Bat',computerChoice,resultMsg);
+        "
+        >
+          Bat
+        </button>
+
+        <!--------------------------Ball------------------------>
+        <button
+          class="items"
+          onclick="
+            computerChoice = getComputerChoice();
+            resultMsg = getResult('Ball', computerChoice);
+            showResult('Ball',computerChoice,resultMsg);
+        "
+        >
+          Ball
+        </button>
+
+        <!--------------------Stump------------------------------>
+        <button
+          class="items"
+          onclick="
+            computerChoice = getComputerChoice();
+            resultMsg = getResult('Stump', computerChoice);
+            showResult('Stump',computerChoice,resultMsg);
+      "
+        >
+          Stump
+        </button>
+
+        <!---------------------Reset----------------------------->
+        <button
+          class="btn"
+          onclick="localStorage.clear() 
+          resetScore();"
+        >
+          Reset
+        </button>
+
+        <!------------------------------------------------------>
+        <div id="user-move"></div>
+        <div id="computer-move"></div>
+        <div id="result"></div>
+        <div id="score"></div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
